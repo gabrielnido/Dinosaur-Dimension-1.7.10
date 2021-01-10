@@ -20,7 +20,7 @@ public class EntityStego extends DDEntityHerbivoreMob
 	protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.19D);
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.30D);
     }
 
 	@Override
