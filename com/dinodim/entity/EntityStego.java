@@ -13,14 +13,15 @@ public class EntityStego extends DDEntityHerbivoreMob
 	{
 		super(worldIn);
 		this.setSize(2.5F, 3.0F);
-		this.setAttackDamage(2.5F);
+		this.setAttackDamage(5.5F);
 	}
 	
 	@Override
 	protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.19D);
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(50.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.29D);
     }
 
 	@Override
