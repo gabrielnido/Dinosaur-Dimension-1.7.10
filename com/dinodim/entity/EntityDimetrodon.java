@@ -20,7 +20,7 @@ public class EntityDimetrodon extends DDAgeableMob
 		this.setSize(1.0F, 0.8F);
 		this.setIsAngry(true);
 		this.setDropAmounts(0, 2);
-		this.setAttackDamage(1.0F);
+		this.setAttackDamage(4.0F);
 		this.getNavigator().setAvoidsWater(false);
         this.tasks.addTask(0, new EntityAISwimming(this));
 		this.tasks.addTask(1, new DDEntityAIFollowParent(this, 1.25D));
@@ -32,8 +32,8 @@ public class EntityDimetrodon extends DDAgeableMob
 	protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(15.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.17D);
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(30.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.29D);
         this.getEntityAttribute(SharedMonsterAttributes.knockbackResistance).setBaseValue(0.1D);
     }
 	
